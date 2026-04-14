@@ -17,7 +17,7 @@ public record BankTransfer(String bankName, String iban) implements PaymentMetho
     @Override
     public String process(double amount) {
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-        return ""; // TODO: верните "Перевод через " + bankName + ": " + amount + " руб."
+        return "Перевод через " + bankName + ": " + amount + " руб."; // TODO: верните "Перевод через " + bankName + ": " + amount + " руб."
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
     }
 
@@ -27,7 +27,7 @@ public record BankTransfer(String bankName, String iban) implements PaymentMetho
     @Override
     public double fee(double amount) {
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-        return 0; // TODO: верните 50.0
+        return 50.0; // TODO: верните 50.0
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
     }
 }

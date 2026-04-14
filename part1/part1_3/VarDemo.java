@@ -48,7 +48,7 @@ public class VarDemo {
         //   System.out.println(list + " -> " + list.getClass().getSimpleName());
 
         // TODO: Пример 4 — массив
-        //   var array = new int[]{1, 2, 3};
+        // var array = new int[]{1, 2, 3};
         //   System.out.println(Arrays.toString(array) + " -> " + array.getClass().getSimpleName());
 
         // TODO: Пример 5 — ваш собственный объект (например, BankAccount)

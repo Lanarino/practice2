@@ -17,7 +17,7 @@ public class Manager extends Employee {
         super(name, baseSalary);
         // TODO: сохраните teamSize в поле
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-
+        this.teamSize = teamSize;
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
     }
 
@@ -29,7 +29,7 @@ public class Manager extends Employee {
     @Override
     public double calculateBonus() {
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-        return 0; // TODO: верните baseSalary * 0.15 + teamSize * 5000
+        return getBaseSalary() * 0.15 + teamSize * 5000; // TODO: верните baseSalary * 0.15 + teamSize * 5000
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
     }
 }

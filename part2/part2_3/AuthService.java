@@ -11,7 +11,7 @@ public class AuthService implements Loggable {
     @Override
     public String getComponentName() {
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-        return ""; // TODO: верните "AuthService"
+        return "AuthService"; // TODO: верните "AuthService"
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
     }
 
@@ -24,7 +24,11 @@ public class AuthService implements Loggable {
      */
     public void login(String username, boolean success) {
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-
+        if (success) {
+            log("Вход пользователя: " + username + " — успешно");
+        } else {
+            logError("Вход пользователя: " + username + " — отказано");
+        }
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
     }
 }

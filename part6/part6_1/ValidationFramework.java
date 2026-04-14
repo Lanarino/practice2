@@ -109,7 +109,7 @@ public class ValidationFramework {
                 }
             }
             // ▼ ВАШ КОД ЗДЕСЬ ▼
-            return new ArrayList<>();//???????????
+            return errors; //???????????
             // ▲ КОНЕЦ ВАШЕГО КОДА ▲
         }
     }

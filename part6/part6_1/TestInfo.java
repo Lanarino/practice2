@@ -25,7 +25,7 @@ import java.lang.reflect.Method;
 
 // TODO: замените SOURCE на правильную политику, чтобы аннотация была доступна через Reflection
 // Подсказка: SOURCE → стирается при компиляции, CLASS → только в байткоде, RUNTIME → доступна через Reflection
-@Retention(RetentionPolicy.SOURCE)
+@Retention(RetentionPolicy.RUNTIME)
 // Вопрос: почему здесь указано METHOD? Что будет, если заменить на TYPE или FIELD?
 @Target(ElementType.METHOD)
 @interface TestInfo {

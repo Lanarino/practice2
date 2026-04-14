@@ -41,7 +41,11 @@ public class GradeJournal {
      */
     public static double average(int[] grades) {
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-        return 0; // TODO: просуммируйте все элементы, разделите на (double) grades.length
+        int sum = 0; // TODO: просуммируйте все элементы, разделите на (double) grades.length
+        for (int grade : grades) {
+            sum += grade;
+        }
+        return (double) sum / grades.length;
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
     }
 
@@ -53,7 +57,13 @@ public class GradeJournal {
      */
     public static int max(int[] grades) {
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-        return 0; // TODO: начните с grades[0], пройдите циклом, обновляйте максимум
+        int max = grades[0]; // TODO: начните с grades[0], пройдите циклом, обновляйте максимум
+        for (int i = 1; i < grades.length; i++) {
+            if (grades[i] > max) {
+                max = grades[i];
+            }
+        }
+        return max;
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
     }
 
@@ -65,7 +75,13 @@ public class GradeJournal {
      */
     public static int min(int[] grades) {
         // ▼ ВАШ КОД ЗДЕСЬ ▼
-        return 0; // TODO: начните с grades[0], пройдите циклом, обновляйте минимум
+        int min = grades[0];// TODO: начните с grades[0], пройдите циклом, обновляйте минимум
+        for (int i = 1; i < grades.length; i++) {
+            if (grades[i] < min) {
+                min = grades[i];
+            }
+        }
+        return min;
         // ▲ КОНЕЦ ВАШЕГО КОДА ▲
     }
 
